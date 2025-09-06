@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Случайная цитата</title>
+</head>
+<body>
+    <h1>Случайная цитата</h1>
+    {% if quote %}
+        <p><strong>{{ quote.author }}</strong>: {{ quote.text }}</p>
+        <p>Добавлено: {{ quote.created_at }}</p>
+    {% else %}
+        <p>Нет доступных цитат. Добавьте их через админ-панель!</p>
+    {% endif %}
+    <a href="{% url 'random_quote' %}">Обновить цитату</a>
+</body>
+</html>
