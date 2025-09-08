@@ -8,7 +8,7 @@ SECRET_KEY = '(4#73wlzjmm=dm6)8pist^^v!r@hn*2k4@uztqudgh5vsor!d@'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rshifter.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
